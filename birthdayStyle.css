@@ -1,3 +1,28 @@
+body{
+  background-image: url(lenny.jpg);
+}
+
 h1{
-  color: #ff3366;
+  text-align: center;
+  border: 10px solid #681db8;
+  padding: 15px;
+  margin-left: 350px;
+  margin-right: 350px;
+  font-size: 85px;
+  margin-bottom: 0px;
+  background-color: #d9b4fa;
+}
+h2{
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+  border: 10px dashed #1d58b8;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: #b8cdff;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+p{
+  text-align: center;
 }
