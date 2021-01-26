@@ -2,6 +2,14 @@ h1{
   font-size: 80px;
   margin: 40px;
 }
+
+h2{
+  border-bottom-style: groove;
+  border-bottom-width:medium;
+  margin-left: 425px;
+  margin-right: 425px;
+
+}
 body{
 font-family: 'Raleway';
   text-align: center;
