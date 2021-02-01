@@ -1,0 +1,188 @@
+h1 {
+  font-family: condor, sans-serif;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius:500px;
+  background-color: #e01600;
+  animation: back-ani 10s linear infinite;
+
+}
+
+@keyframes back-ani {
+  0%   {background-color:#e01600;}
+  25%  {background-color:#fcba03;}
+  50% {background-color:#0aa8fc;}
+  100%   {background-color:#e01600;}
+}
+
+body{
+  background-image: url(background.png);
+  font-family: condor, sans-serif;
+}
+
+.Pikachu {
+  position: absolute;
+  top: 150px;
+  left: 1425px;
+  width: 260px;
+  height: 373px;
+  background-image: url(pikachu.jpeg);
+  animation: pikachu-ani 5s linear;
+}
+
+@keyframes pikachu-ani {
+  0%   { opacity: .0; left:0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; left: 1425px; }
+}
+
+
+#pikaprice {
+  position: absolute;
+  top: 536px;
+  left: 1425px;
+}
+
+#pikaprice img {
+  transition: .1s all;
+  filter: blur(10px);
+}
+
+#pikaprice:hover img {
+  filter: blur(0px);
+}
+
+
+.Charizard {
+  position: absolute;
+  top: 150px;
+  left: 1125px;
+  width: 266px;
+  height: 373px;
+  background-image: url(charizard.jpeg);
+  animation-delay: 15s;
+  animation: charizard-ani 5s linear;
+}
+
+@keyframes charizard-ani {
+  0%   { opacity: .0; left:0; }
+  20%   { opacity: .0; left:0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; left: 1125px; }
+}
+
+
+#charprice {
+  position: absolute;
+  top: 540px;
+  left: 1113px;
+}
+
+#charprice img {
+  transition: .1s all;
+  filter: blur(10px);
+}
+
+#charprice:hover img {
+  filter: blur(0px);
+}
+
+.Rayquaza {
+  position: absolute;
+  top: 150px;
+  left: 825px;
+  width: 266px;
+  height: 373px;
+  background-image: url(rayquaza.jpeg);
+  animation-delay: 15s;
+  animation: rayquaza-ani 5s linear;
+}
+
+@keyframes rayquaza-ani {
+  0%   { opacity: .0; left:0; }
+  40%   { opacity: .0; left:0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; left: 825px; }
+}
+
+#rayprice {
+  position: absolute;
+  top: 543px;
+  left: 825px;
+}
+
+#rayprice img {
+  transition: .1s all;
+  filter: blur(10px);
+}
+
+#rayprice:hover img {
+  filter: blur(0px);
+}
+
+.Magikarp {
+  position: absolute;
+  top: 150px;
+  left: 525px;
+  width: 266px;
+  height: 373px;
+  background-image: url(magikarp.jpeg);
+  animation-delay: 15s;
+  animation: magikarp-ani 5s linear;
+}
+
+@keyframes magikarp-ani {
+  0%   { opacity: .0; left:0; }
+  61%   { opacity: .0; left:0; }
+  100% { opacity: 1; left: 525px; }
+}
+
+#magiprice {
+  position: absolute;
+  top: 543px;
+  left: 525px;
+}
+
+#magiprice img {
+  transition: .1s all;
+  filter: blur(10px);
+}
+
+#magiprice:hover img {
+  filter: blur(0px);
+}
+
+.Illustrator {
+  position: absolute;
+  top: 150px;
+  left: 225px;
+  width: 266px;
+  height: 373px;
+  background-image: url(illustrator.jpeg);
+  animation-delay: 15s;
+  animation: illustrator-ani 5s linear;
+}
+
+@keyframes illustrator-ani {
+  0%   { opacity: .0; left:0; }
+  85%   { opacity: .0; left:0; }
+  100% { opacity: 1; left: 225px; }
+}
+
+#illiprice {
+  position: absolute;
+  top: 546px;
+  left: 199px;
+}
+
+#illiprice img {
+  transition: .1s all;
+  filter: blur(10px);
+}
+
+#illiprice:hover img {
+  filter: blur(0px);
+}
