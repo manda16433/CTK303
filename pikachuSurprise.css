@@ -1,0 +1,102 @@
+#pikachu{
+  width: 1500px;
+  height: 1500px;
+  /* display: block; */
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+body{
+  background-image: url(background.png);
+}
+
+h1 {
+  font-family: condor, sans-serif;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius:300px;
+  background-color: #e01600;
+  animation: back-ani 10s linear infinite;
+
+}
+
+@keyframes back-ani {
+  0%   {background-color:#e01600;}
+  25%  {background-color:#fcba03;}
+  50% {background-color:#0aa8fc;}
+  100%   {background-color:#e01600;}
+}
+
+h2{
+  font-family: condor, sans-serif;
+  text-align: center;
+}
+
+
+#leftEar{
+  animation: leftEarMove 1.0s infinite;
+  transform-origin: center;
+
+}
+
+@keyframes leftEarMove {
+  0%   { transform: rotate(0deg);}
+  50% {transform: rotate(10deg);}
+  100% { transform: rotate(0deg);}
+}
+
+#rightEar{
+  animation: rightEarMove 1.0s infinite;
+  transform-origin: center;
+
+}
+
+@keyframes rightEarMove {
+  0%   { transform: rotate(0deg);}
+  70% {transform: rotate(-3deg);}
+  100% { transform: rotate(0deg);}
+}
+
+#face{
+  opacity: 0%;
+
+}
+
+#face:hover{
+  animation: pika-face 1s linear;
+  opacity: 100%;
+
+}
+
+@keyframes pika-face {
+  0%   {opacity: 0%;}
+  100%   {opacity: 100%;}
+}
+
+#tail{
+  animation: tailMove 1.0s infinite;
+  transform-origin: center;
+
+}
+
+@keyframes tailMove {
+  0%   { transform: rotate(0deg);}
+  30% {transform: rotate(-6deg);}
+  100% { transform: rotate(0deg);}
+}
+
+#arm{
+  animation: armMove 1.0s infinite;
+  transform-origin: bottom;
+
+}
+
+@keyframes armMove {
+  0%   { transform: rotate(0deg);}
+  50% {transform: rotate(15deg);}
+  100% { transform: rotate(0deg);}
+}
