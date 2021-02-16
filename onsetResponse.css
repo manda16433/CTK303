@@ -1,0 +1,64 @@
+h1{
+  font-family: lust-stencil, sans-serif;
+  font-size: 5em;
+  font-style: normal;
+  text-align: center;
+  color: #878787;
+  border-bottom: 5px solid #878787;
+}
+
+h2{
+  font-family: lust-stencil, sans-serif;
+  font-size: 3em;
+  font-style: normal;
+  text-align: center;
+  color: #878787;
+}
+
+body{
+  font-family: hellofont-id-liejinti, sans-serif;
+font-weight: 400;
+font-style: normal;
+background-color: black;
+color: #878787;
+}
+
+main{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+nav {
+  display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-bottom: 1em;
+  border: 7px dashed #878787;
+  padding: 1em;
+  align-content: center;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+nav a{
+  border: 1px solid #999;
+	background-color: #eee;
+	border-radius: .5em;
+  text-align:center;
+}
+
+@media all and (max-width: 40em){
+	nav { grid-template-columns: 1fr; }
+}
+
+@media all and (min-width: 40em){
+	nav { grid-template-columns: 1fr 1fr; }
+  main{ width: 80%; margin: auto;}
+}
+
+@media all and (min-width: 90em){
+	nav { grid-template-columns: repeat(4, 1fr); }
+  main{ width: 70%; margin: auto;}
+}
