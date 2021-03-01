@@ -25,6 +25,11 @@ h2{
   margin-top: 5px;
 }
 
+iframe{
+  width: 820px;
+  height:520px;
+}
+
 p{
   text-align: center;
   margin-left: 350px;
