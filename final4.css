@@ -1,0 +1,124 @@
+#envelope{
+  position: absolute;
+  top: 35em;
+  left: 10em;
+  width: 20em;
+  height: 20em;
+  animation: envy-move 10s linear infinite;
+}
+
+h1{
+  font-family: dico-code-two;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-left: 14em;
+  margin-right: 14em;
+  margin-top: 0.75em;
+}
+
+.rect{
+  position: fixed;
+  left: -1em;
+  top: 50em;
+  height: 150px;
+  width: 1950px;
+  background-color: #6270a1;
+}
+
+.move{
+  width: 8em;
+  height: 3em;
+  position: absolute;
+  animation: back-ani 5s linear infinite;
+  left: 42.5%;
+  top: 14%;
+  font-size: 35px;
+  color: white;
+  font-family: condor, sans-serif;
+  border: none;
+  text-shadow: 2px 2px black;
+}
+
+.but{
+  position: absolute;
+  left: 44%;
+  top: 17%;
+  font-size: 35px;
+  color: white;
+  font-family: dico-code-two;
+  border: none;
+  text-shadow: 2px 2px black;
+}
+
+#left{
+  animation: left-leg 1s infinite;
+  transform-origin: top;
+}
+
+#right{
+  animation: right-leg 1s infinite;
+  transform-origin: top;
+}
+
+@keyframes back-ani {
+  0%   {background-color:#e01600;}
+  25%  {background-color:#fcba03;}
+  50% {background-color:#0aa8fc;}
+  100%   {background-color:#e01600;}
+}
+
+@keyframes left-leg{
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes right-leg{
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes envy-move{
+  0% {left: 10%;}
+  100% {left: 100%;}
+}
+
+@media all and (max-width: 119em){
+  h1 { margin-left: 6em;
+        margin-right: 6em;
+      font-size: 2em;}
+}
+@media all and (max-width: 90em){
+  h1 { margin-left: 3em;
+        margin-right: 3em;
+      font-size: 2em;}
+}
+@media all and (max-width: 77em){
+  h1 { margin-left: 2em;
+        margin-right: 2em;
+      font-size: 2em;}
+  .move{ top: 20%;
+        left: 35%;}
+  .but{ top:23%;
+        left: 37%;}
+}
+@media all and (max-width: 55em){
+  h1 { margin-left: 1em;
+        margin-right: 1em;
+      font-size: 2em;}
+  .move{ top: 22%;
+        left: 35%;}
+  .but{ top:25%;
+        left: 37%;}
+}
+@media all and (max-width: 40em){
+  h1 { margin-left: 1em;
+        margin-right: 1em;
+      font-size: 2em;}
+  .move{ top: 31%;
+        left: 28%;}
+  .but{ top:34%;
+        left: 30%;}
+}
