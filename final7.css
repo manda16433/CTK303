@@ -1,0 +1,128 @@
+#code{
+  position: absolute;
+  top: 0em;
+  left: 0em;
+}
+
+
+
+body{
+  background-image: url("blueBack.png");
+}
+
+h1{
+  font-family: dico-code-two;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 0.25em;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.move{
+  width: 8em;
+  height: 3em;
+  position: absolute;
+  animation: back-ani 5s linear infinite;
+  left: 44%;
+  top: 50%;
+  font-size: 35px;
+  color: white;
+  border: none;
+  text-shadow: 2px 2px black;
+  cursor: help;
+}
+
+.but{
+  position: absolute;
+  left: 45%;
+  top: 53%;
+  font-size: 35px;
+  color: white;
+  font-family: dico-code-two;
+  border: none;
+  text-shadow: 2px 2px black;
+}
+
+
+#farLeft{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+#left2{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#left_3{
+  opacity: 0%;
+}
+
+#middle{
+  opacity: 0%;
+}
+
+#right3{
+  opacity: 0%;
+}
+
+#right2{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#farRight{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+
+#envyBody{
+  transform: translate(0px, 800px);
+  animation: envy-move 5s linear;
+  transform-origin: top;
+}
+
+#leftLeg{
+  transform: translate(0px, 800px);
+  /* animation: left 5s linear; */
+}
+
+#rightLeg{
+  transform: translate(0px, 800px);
+  /* animation: right 5s linear; */
+}
+
+@keyframes back-ani {
+  0%   {background-color:#e01600;}
+  25%  {background-color:#fcba03;}
+  50% {background-color:#0aa8fc;}
+  100%   {background-color:#e01600;}
+}
+
+
+@keyframes envy-move{
+  0% {transform: translateY(800px);}
+  100% { transform: translateY(0px);}
+
+}
+
+@keyframes far-left{
+  0% { transform: translateY(20px);
+      opacity: 50%;}
+  50% { transform: translateY(30px);}
+  100% { transform: translateY(20px);}
+}
+
+@keyframes far-right{
+  0% { transform: translateY(30px);}
+  50% { transform: translateY(20px);
+          opacity: 50%;}
+  100% { transform: translateY(30px);}
+}

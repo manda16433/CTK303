@@ -7,6 +7,10 @@
   animation: envy-move 2.5s linear;
 }
 
+body{
+  background-image: url("blueBack.png");
+}
+
 h1{
   font-family: dico-code-two;
   font-weight: 400;
@@ -15,6 +19,8 @@ h1{
   margin-left: 14em;
   margin-right: 14em;
   margin-top: 0.25em;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .rect1{
@@ -46,6 +52,7 @@ h1{
   color: white;
   border: none;
   text-shadow: 2px 2px black;
+  cursor:  help;
 }
 
 .but{
@@ -66,6 +73,41 @@ h1{
 
 #right{
   animation: right-leg 2.5s linear;
+  transform-origin: top;
+}
+
+#farLeft{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+#left2{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#left_3{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+#middle{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#right3{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+#right2{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#farRight{
+  animation: far-left 1s infinite;
   transform-origin: top;
 }
 
@@ -100,6 +142,21 @@ h1{
   0% {left: -10%;}
   100% {left: 10%;}
 }
+
+@keyframes far-left{
+  0% { transform: translateY(20px);
+      opacity: 50%;}
+  50% { transform: translateY(30px);}
+  100% { transform: translateY(20px);}
+}
+
+@keyframes far-right{
+  0% { transform: translateY(30px);}
+  50% { transform: translateY(20px);
+          opacity: 50%;}
+  100% { transform: translateY(30px);}
+}
+
 
 @media all and (max-width: 119em){
   h1 { margin-left: 6em;

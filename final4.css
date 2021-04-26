@@ -1,10 +1,14 @@
 #envelope{
   position: absolute;
   top: 35em;
-  left: 10em;
+  left: 130em;
   width: 20em;
   height: 20em;
-  animation: envy-move 10s linear infinite;
+  animation: envy-move 10s linear;
+}
+
+body{
+  background-image: url("blueBack.png");
 }
 
 h1{
@@ -12,9 +16,11 @@ h1{
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  color: white;
   margin-left: 14em;
   margin-right: 14em;
   margin-top: 0.75em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .rect{
@@ -38,6 +44,7 @@ h1{
   font-family: condor, sans-serif;
   border: none;
   text-shadow: 2px 2px black;
+  cursor:  help;
 }
 
 .but{
@@ -58,6 +65,41 @@ h1{
 
 #right{
   animation: right-leg 1s infinite;
+  transform-origin: top;
+}
+
+#farLeft{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+#left2{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#left_3{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+#middle{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#right3{
+  animation: far-left 1s infinite;
+  transform-origin: top;
+}
+
+#right2{
+  animation: far-right 1s infinite;
+  transform-origin: top;
+}
+
+#farRight{
+  animation: far-left 1s infinite;
   transform-origin: top;
 }
 
@@ -84,6 +126,21 @@ h1{
   0% {left: 10%;}
   100% {left: 100%;}
 }
+
+@keyframes far-left{
+  0% { transform: translateY(20px);
+      opacity: 50%;}
+  50% { transform: translateY(30px);}
+  100% { transform: translateY(20px);}
+}
+
+@keyframes far-right{
+  0% { transform: translateY(30px);}
+  50% { transform: translateY(20px);
+          opacity: 50%;}
+  100% { transform: translateY(30px);}
+}
+
 
 @media all and (max-width: 119em){
   h1 { margin-left: 6em;

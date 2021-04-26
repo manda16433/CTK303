@@ -6,6 +6,10 @@
   height: 70%;
 }
 
+body{
+  background-image: url("blueBack.png");
+}
+
 h1{
   font-family: dico-code-two;
   font-weight: 400;
@@ -14,6 +18,8 @@ h1{
   margin-left: 14em;
   margin-right: 14em;
   margin-top: 0.75em;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .move{
@@ -28,6 +34,7 @@ h1{
   font-family: condor, sans-serif;
   border: none;
   text-shadow: 2px 2px black;
+  cursor:  help;
 }
 
 div{
