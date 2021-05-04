@@ -28,14 +28,21 @@ h1{
   width: 8em;
   height: 3em;
   position: absolute;
-  animation: back-ani 5s linear infinite;
   left: 44%;
   top: 50%;
   font-size: 35px;
   color: white;
   border: none;
   text-shadow: 2px 2px black;
-  cursor: help;
+  cursor:  pointer;
+  transition: 1s;
+  opacity: 0%;
+
+}
+
+.move:hover{
+  animation: back-ani 5s linear infinite;
+  opacity: 100%;
 }
 
 .but{
@@ -47,7 +54,9 @@ h1{
   font-family: dico-code-two;
   border: none;
   text-shadow: 2px 2px black;
+  animation: text-ani 6s linear;
 }
+
 
 
 #farLeft{
@@ -90,13 +99,15 @@ h1{
 }
 
 #leftLeg{
-  transform: translate(0px, 800px);
-  /* animation: left 5s linear; */
+  transform: translate(0px, 700px);
+  animation: left 5s linear;
+  transform-origin: top;
 }
 
 #rightLeg{
-  transform: translate(0px, 800px);
-  /* animation: right 5s linear; */
+  transform: translate(0px, 700px);
+  animation: right 5s linear;
+  transform-origin: top;
 }
 
 @keyframes back-ani {
@@ -106,12 +117,47 @@ h1{
   100%   {background-color:#e01600;}
 }
 
+@keyframes text-ani{
+  0% {opacity: 0%;}
+  90%{opacity: 0%;}
+  100%{opacity: 100%;}
+}
+
 
 @keyframes envy-move{
-  0% {transform: translateY(800px);}
-  100% { transform: translateY(0px);}
+  0% {transform: translateY(800px) scale(1);}
+  100% {transform: translateY(30px) scale(.1);}
 
 }
+
+@keyframes left {
+  0% {transform: translateY(800px) scale(1) rotate(0deg);}
+  10% {transform: translateY(650px) scale(.95) rotate(5deg);}
+  20% {transform: translateY(600px) scale(.9) rotate(0deg);}
+  30% {transform: translateY(450px) scale(.8) rotate(5deg);}
+  40% {transform: translateY(400px) scale(.7) rotate(0deg);}
+  50% {transform: translateY(300px) scale(.6) rotate(5deg);}
+  60% {transform: translateY(250px) scale(.5) rotate(0deg);}
+  70% {transform: translateY(200px) scale(.4) rotate(5deg);}
+  80% {transform: translateY(150px) scale(.3) rotate(0deg);}
+  90% {transform: translateY(100px) scale(.2) rotate(5deg);}
+  100% {transform: translateY(30px) scale(.1) rotate(0deg);}
+}
+
+@keyframes right {
+  0% {transform: translateY(800px) scale(1) rotate(0deg);}
+  10% {transform: translateY(650px) scale(.95) rotate(-5deg);}
+  20% {transform: translateY(600px) scale(.9) rotate(0deg);}
+  30% {transform: translateY(450px) scale(.8) rotate(-5deg);}
+  40% {transform: translateY(400px) scale(.7) rotate(0deg);}
+  50% {transform: translateY(300px) scale(.6) rotate(-5deg);}
+  60% {transform: translateY(250px) scale(.5) rotate(0deg);}
+  70% {transform: translateY(200px) scale(.4) rotate(-5deg);}
+  80% {transform: translateY(150px) scale(.3) rotate(0deg);}
+  90% {transform: translateY(100px) scale(.2) rotate(-5deg);}
+  100% {transform: translateY(30px) scale(.1) rotate(0deg);}
+}
+
 
 @keyframes far-left{
   0% { transform: translateY(20px);

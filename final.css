@@ -34,7 +34,7 @@ h1{
   font-family: condor, sans-serif;
   border: none;
   text-shadow: 2px 2px black;
-  cursor:  help;
+  cursor:  pointer;
 }
 
 div{

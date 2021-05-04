@@ -1,14 +1,14 @@
 #envelope{
   position: absolute;
   top: 35em;
-  left: 10em;
+  left: 42%;
   width: 20em;
   height: 20em;
-  animation: envy-move 2.5s linear;
+  animation: envy-move 5s linear;
 }
 
 body{
-  background-image: url("blueBack.png");
+  background-image: url("emailback.png");
 }
 
 h1{
@@ -16,30 +16,13 @@ h1{
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  margin-left: 14em;
-  margin-right: 14em;
-  margin-top: 0.25em;
+  margin-left: 13em;
+  margin-right: 13em;
+  margin-top: 7.4em;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.rect1{
-  position: fixed;
-  left: -1em;
-  top: 50em;
-  height: 150px;
-  width: 40%;
-  background-color: #6270a1;
-}
-
-.rect2{
-  position: fixed;
-  left: 60%;
-  top: 50em;
-  height: 150px;
-  width: 60em;
-  background-color: #6270a1;
-}
 
 .move{
   width: 8em;
@@ -47,9 +30,10 @@ h1{
   position: absolute;
   animation: back-ani 5s linear infinite;
   left: 42.5%;
-  top: 16%;
+  top: 37%;
   font-size: 35px;
   color: white;
+  font-family: condor, sans-serif;
   border: none;
   text-shadow: 2px 2px black;
   cursor:  pointer;
@@ -57,8 +41,8 @@ h1{
 
 .but{
   position: absolute;
-  left: 45%;
-  top: 19%;
+  left: 46.5%;
+  top: 40%;
   font-size: 35px;
   color: white;
   font-family: dico-code-two;
@@ -67,47 +51,12 @@ h1{
 }
 
 #left{
-  animation: left-leg 2.5s linear;
+  animation: left-leg 5s linear;
   transform-origin: top;
 }
 
 #right{
-  animation: right-leg 2.5s linear;
-  transform-origin: top;
-}
-
-#farLeft{
-  animation: far-left 1s infinite;
-  transform-origin: top;
-}
-
-#left2{
-  animation: far-right 1s infinite;
-  transform-origin: top;
-}
-
-#left_3{
-  animation: far-left 1s infinite;
-  transform-origin: top;
-}
-
-#middle{
-  animation: far-right 1s infinite;
-  transform-origin: top;
-}
-
-#right3{
-  animation: far-left 1s infinite;
-  transform-origin: top;
-}
-
-#right2{
-  animation: far-right 1s infinite;
-  transform-origin: top;
-}
-
-#farRight{
-  animation: far-left 1s infinite;
+  animation: right-leg 5s linear;
   transform-origin: top;
 }
 
@@ -120,9 +69,13 @@ h1{
 
 @keyframes left-leg{
   0% {transform: rotate(0deg);}
-  20% {transform: rotate(5deg);}
+  10% {transform: rotate(5deg);}
+  20% {transform: rotate(0deg);}
+  30% {transform: rotate(5deg);}
   40% {transform: rotate(0deg);}
-  60% {transform: rotate(5deg);}
+  50% {transform: rotate(5deg);}
+  60% {transform: rotate(0deg);}
+  70% {transform: rotate(5deg);}
   80% {transform: rotate(0deg);}
   90% {transform: rotate(5deg);}
   100% {transform: rotate(0deg);}
@@ -130,31 +83,37 @@ h1{
 
 @keyframes right-leg{
   0% {transform: rotate(0deg);}
-  20% {transform: rotate(-5deg);}
+  10% {transform: rotate(-5deg);}
+  20% {transform: rotate(0deg);}
+  30% {transform: rotate(-5deg);}
   40% {transform: rotate(0deg);}
-  60% {transform: rotate(-5deg);}
+  50% {transform: rotate(-5deg);}
+  60% {transform: rotate(0deg);}
+  70% {transform: rotate(-5deg);}
   80% {transform: rotate(0deg);}
   90% {transform: rotate(-5deg);}
   100% {transform: rotate(0deg);}
 }
-
 @keyframes envy-move{
   0% {left: -10%;}
-  100% {left: 10%;}
-}
-
-@keyframes far-left{
-  0% { transform: translateY(20px);
-      opacity: 50%;}
-  50% { transform: translateY(30px);}
-  100% { transform: translateY(20px);}
-}
-
-@keyframes far-right{
-  0% { transform: translateY(30px);}
-  50% { transform: translateY(20px);
-          opacity: 50%;}
-  100% { transform: translateY(30px);}
+  60%{ left: 42%;
+        top: 35em;}
+  65%{ left: 42%;
+        top: 31em;}
+  70%{ left: 42%;
+        top: 35em;}
+  75%{ left: 42%;
+        top: 31em;}
+  80%{ left: 42%;
+        top: 35em;}
+  85%{ left: 42%;
+        top: 31em;}
+  90%{ left: 42%;
+        top: 35em;}
+  95%{ left: 42%;
+        top: 31em;}
+  100% {left: 42%;
+        top: 35em;}
 }
 
 
@@ -167,7 +126,6 @@ h1{
   h1 { margin-left: 3em;
         margin-right: 3em;
       font-size: 2em;}
-  .rect1{ width: 55%;}
 }
 @media all and (max-width: 77em){
   h1 { margin-left: 2em;
@@ -176,8 +134,7 @@ h1{
   .move{ top: 20%;
         left: 35%;}
   .but{ top:23%;
-        left: 38%;}
-  .rect1{ width: 70%;}
+        left: 37%;}
 }
 @media all and (max-width: 55em){
   h1 { margin-left: 1em;
@@ -186,8 +143,7 @@ h1{
   .move{ top: 22%;
         left: 35%;}
   .but{ top:25%;
-        left: 38%;}
-
+        left: 37%;}
 }
 @media all and (max-width: 40em){
   h1 { margin-left: 1em;
@@ -196,5 +152,5 @@ h1{
   .move{ top: 31%;
         left: 28%;}
   .but{ top:34%;
-        left: 31%;}
+        left: 30%;}
 }
